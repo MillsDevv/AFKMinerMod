@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "afkminermod",
+  "version": "${version}",
+  "name": "AFKMinerMod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/afkminermod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.mills.afkminermod.client.MainDataGenerator"
+    ],
+    "client": [
+      "com.mills.afkminermod.client.MainClient"
+    ],
+    "main": [
+      "com.mills.afkminermod.Main"
+    ]
+  },
+  "mixins": [
+    "afkminermod.mixins.json",
+    {
+      "config": "afkminermod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
