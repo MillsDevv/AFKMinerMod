@@ -1,9 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.mills.afkminermod.mixin.client",
+  "package": "com.mills.afkminermod.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "ActionBarAccessorMixin"
   ],
   "injectors": {
     "defaultRequire": 1
