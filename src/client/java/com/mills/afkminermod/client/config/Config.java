@@ -18,8 +18,6 @@ public class Config {
     @Expose
     public boolean instantRotationReset = false;
     @Expose
-    public boolean windowsNotificationOnRotation = true;
-    @Expose
     public float rotationThreshold = 5.0f;
 
     // hotbar shuffle
@@ -27,6 +25,4 @@ public class Config {
     public boolean resetHotbarOnInvShuffle = true;
     @Expose
     public boolean instantHotbarReset = false;
-    @Expose
-    public boolean windowsNotificationOnHotbarShuffle = true;
 }

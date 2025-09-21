@@ -63,14 +63,6 @@ public class ConfigScreenBuilder {
                 .setSaveConsumer(newValue -> config.instantRotationReset = newValue)
                 .build());
 
-        // rotation notification
-        category.addEntry(entryBuilder
-                .startBooleanToggle(Text.literal("Toggles if you get a notification on rotation (windows only)"),
-                        config.windowsNotificationOnRotation)
-                .setDefaultValue(config.windowsNotificationOnRotation)
-                .setSaveConsumer(newValue -> config.windowsNotificationOnRotation = newValue)
-                .build());
-
         // rotation threshold
         category.addEntry(entryBuilder
                 .startFloatField(Text.literal("The threshold on how much of rotation to detect"), config.rotationThreshold)
@@ -94,13 +86,6 @@ public class ConfigScreenBuilder {
                 .setSaveConsumer(newValue -> config.instantHotbarReset = newValue)
                 .build());
 
-        // hotbar shuffle notification
-        category.addEntry(entryBuilder
-                .startBooleanToggle(Text.literal("Toggles if you get a notification on shuffle (windows only)"),
-                        config.windowsNotificationOnHotbarShuffle)
-                .setDefaultValue(config.windowsNotificationOnHotbarShuffle)
-                .setSaveConsumer(newValue -> config.windowsNotificationOnHotbarShuffle = newValue)
-                .build());
         return builder.build();
     }
 }
